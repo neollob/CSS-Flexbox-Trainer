@@ -1,0 +1,20 @@
+[
+    {
+        "CSS":"CSS Rules",
+        "Inputs":"Edit inputs",
+        "infoTip":"click to disable info",
+        "Copy":{
+            "success":"successful",
+            "unsuccess":"unsuccessful",
+            "fallCopy":"Copying to clipboard has been ",
+            "fallError":"Fallback: Oops, unable to copy ",
+            "asyncCopy":"Copying to clipboard was successful!",
+            "asyncError":"Async: Could not copy text:"
+        },
+        "Mail":"Mail me",
+        "Linkedin":"Contact me in Linkedin",
+        "GitHub":"Contact me in GitHub",
+        "Codepen":"Contact me in Codepen",
+        "StackOverflow":"Contact me in Stack Overflow"
+    }
+]

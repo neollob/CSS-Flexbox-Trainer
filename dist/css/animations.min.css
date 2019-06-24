@@ -1,0 +1,2 @@
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}.fadeIn{opacity:0;-webkit-animation:fade-in 1s forwards;animation:fade-in 1s forwards}.fadeInHalf{opacity:0;-webkit-animation:fade-in 0.5s forwards;animation:fade-in 0.5s forwards}
+/*# sourceMappingURL=animations.min.css.map */

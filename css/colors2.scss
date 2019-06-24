@@ -1,0 +1,38 @@
+$colors: (
+  mainBrand: #FA6ACC,
+  secondaryBrand: #F02A52,
+  highlight: #09A6E4
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+@mixin colors($max, $color-frequency) {
+    $color: 300/$max;
+    
+    @for $i from 1 through $max {
+      .s#{$i} {
+        border: 1px solid hsl(($i - 10)*($color*1.25), ($i - 1)*($color / $color-frequency), 40%);
+       }
+    }
+  } 
+.demo {
+    height:2rem;
+    width:2rem;      
+    @include colors(20,2);
+}
+
+  .div-external { color: orange; }
+.div-internal { border: 1px solid currentColor; }
+/*
+mix($color1, $color2, [$weight])
+adjust-hue($color, $degrees)
+lighten($color, $amount)
+darken($color, $amount)
+saturate($color, $amount)
+*/

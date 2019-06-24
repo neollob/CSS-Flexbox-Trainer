@@ -1,0 +1,1176 @@
+.infoSwitcher .infoLogo {
+  text-align: center;
+  line-height: 2rem;
+  color: #fffaf0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*to hide the inputs arrow spinners*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+/*Switch(slider)*/
+.infoSwitcher {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*Toggle Swich*/
+  /* The switch - the box around the slider */
+}
+
+.infoSwitcher .infoLogo {
+  width: 2.1rem;
+  height: auto;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 0 5px;
+  background-color: #6dccd3;
+  cursor: pointer;
+}
+
+.infoSwitcher .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.infoSwitcher .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.infoSwitcher .switch input:checked + .slider {
+  background-color: #995db5;
+  -webkit-box-shadow: -1px -1px 10px 3px #3c0058 inset;
+          box-shadow: -1px -1px 10px 3px #3c0058 inset;
+}
+
+.infoSwitcher .switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.infoSwitcher .switch input:focus + .slider {
+  -webkit-box-shadow: -1px -1px 10px 3px #3c0058 inset;
+          box-shadow: -1px -1px 10px 3px #3c0058 inset;
+}
+
+.infoSwitcher .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.infoSwitcher .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.infoSwitcher .slider.round {
+  border-radius: 5px;
+}
+
+.infoSwitcher .slider.round:before {
+  border-radius: 15%;
+}
+
+@font-face {
+  font-family: Komika;
+  src: url(../fonts/komikax_-webfont.woff2);
+}
+
+@font-face {
+  font-family: Riffic;
+  src: url(../fonts/riffic-webfont.woff2);
+}
+
+@font-face {
+  font-family: Indigo-regular;
+  src: url(../fonts/indigo_regular-webfont.woff2);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat-medium-webfont.woff2);
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .inputs .textInput, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .sizeContainer .textInput, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .propertiesContainer .textInput, body main .workSpace .container .properties .childrenProperties .childsOptions .textInput {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .inputs .textInput > *, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .sizeContainer .textInput > *, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .propertiesContainer .textInput > *, body main .workSpace .container .properties .childrenProperties .childsOptions .textInput > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .inputs .textInput input, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .sizeContainer .textInput input, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .propertiesContainer .textInput input, body main .workSpace .container .properties .childrenProperties .childsOptions .textInput input {
+  outline: 0;
+  position: relative;
+  max-width: 165px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .inputs, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .sizeContainer, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .propertiesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 20rem;
+      flex-basis: 20rem;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .inputs [data-tip] label, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .sizeContainer [data-tip] label, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .propertiesContainer [data-tip] label {
+  min-width: 100%;
+}
+
+body main .workSpace .container .flexContainer, body main .workSpace .container .properties .fatherProperties > div > label, body main .workSpace .container .properties .childrenProperties > div > label {
+  margin: 0 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #995db5;
+  -webkit-box-shadow: -1px -1px 10px 3px #3c0058 inset;
+          box-shadow: -1px -1px 10px 3px #3c0058 inset;
+}
+
+body main .workSpace .container .flexContainer .flexBox, body main .workSpace .container .properties .fatherProperties .children .childs, body main .workSpace .container .properties .childrenProperties > div > label.inlineStyle, body main .workSpace .container .properties .childrenProperties label[class^='_item']:nth-child(2) {
+  background-color: #f7941f;
+  border-radius: 5px;
+  border-left: 5px solid #f9af57;
+  border-top: 5px solid #f9af57;
+  -webkit-box-shadow: 0px 0px 0px 2px #000;
+          box-shadow: 0px 0px 0px 2px #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: middle;
+}
+
+body main .workSpace .container .flexContainer span, body main .workSpace .container .properties .fatherProperties > div > label span, body main .workSpace .container .properties .childrenProperties > div > label span, body main .workSpace .container .flexContainer .flexBox span, body main .workSpace .container .properties .fatherProperties .children .childs span, body main .workSpace .container .properties .childrenProperties > div > label.inlineStyle span, body main .workSpace .container .properties .childrenProperties label[class^='_item']:nth-child(2) span {
+  position: relative;
+  display: block;
+}
+
+body main .workSpace .container .flexContainer span, body main .workSpace .container .properties .fatherProperties > div > label span, body main .workSpace .container .properties .childrenProperties > div > label span, body main .workSpace .container .flexContainer .flexBox span, body main .workSpace .container .properties .fatherProperties .children .childs span, body main .workSpace .container .properties .childrenProperties > div > label.inlineStyle span, body main .workSpace .container .properties .childrenProperties label[class^='_item']:nth-child(2) span, body main .workSpace .container .properties .fatherProperties .children .childs .numChilds {
+  text-align: center;
+  font: normal 2rem Komika;
+  color: #fffaf0;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .flexOptions, body main .workSpace .container .properties .childrenProperties .childsOptions .propertiesOptions {
+  -ms-flex-preferred-size: 15em;
+      flex-basis: 15em;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .flexOptions > div, body main .workSpace .container .properties .childrenProperties .childsOptions .propertiesOptions > div {
+  background-color: #fffaf0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .flexOptions > div > *, body main .workSpace .container .properties .childrenProperties .childsOptions .propertiesOptions > div > * {
+  padding: 5px;
+  margin: 0 5px 5px 5px;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .flexOptions > div > *:first-child, body main .workSpace .container .properties .childrenProperties .childsOptions .propertiesOptions > div > *:first-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body main .workSpace .container .properties .toggleStyles[tgglTxt^='CSS'], body main .workSpace .container .properties .styleBox > * {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #d0dbe5;
+  cursor: pointer;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .inputs .textInput input, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .sizeContainer .textInput input, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .propertiesContainer .textInput input, body main .workSpace .container .properties .childrenProperties .childsOptions .textInput input, body main .workSpace .container .properties .fatherProperties .children .childSize input, body main .workSpace .container .properties .toggleStyles[tgglTxt^='Edit'] {
+  padding: 5px;
+  background-color: #fffaf0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .inputs .textInput input:focus, body main .workSpace .container .properties .childrenProperties .childsOptions .textInput input:focus, body main .workSpace .container .properties .fatherProperties .children .childSize input:focus, body main .workSpace .container .properties .toggleStyles:focus[tgglTxt^='Edit'] {
+  background-color: #e6fee6 !important;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .inputs .textInput input, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .sizeContainer .textInput input, body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .propertiesContainer .textInput input, body main .workSpace .container .properties .childrenProperties .childsOptions .textInput input, body main .workSpace .container .properties .fatherProperties .children .childSize input, body main .workSpace .container .properties .toggleStyles[tgglTxt^='Edit'], body .border {
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 318px;
+}
+
+body {
+  font-family: Montserrat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Indigo-regular , sans-serif;
+  font-synthesis: style;
+  font-size: larger;
+  background-color: #d3e3fc;
+}
+
+body header > * {
+  margin: 0;
+  margin: 0 10px;
+}
+
+body header h1 {
+  color: #995db5;
+  text-shadow: -2px 0 #fffaf0, 0 2px #fffaf0, 2px 0 #fffaf0, 0 -2px #fffaf0;
+  font-variant: small-caps;
+  cursor: default;
+}
+
+body header h1 span {
+  color: #f7941f;
+}
+
+body header h1 small {
+  color: #b5e6a9;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+body main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #d3e3fc;
+}
+
+body main .workSpace {
+  height: 100%;
+  width: 100%;
+}
+
+body main .workSpace input {
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+body main .workSpace input[type='number'] {
+  width: 2rem;
+}
+
+body main .workSpace .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+body main .workSpace .container > * {
+  height: 100%;
+}
+
+body main .workSpace .container .flexContainer {
+  min-height: 45vh;
+}
+
+body main .workSpace .container .flexContainer .flexBox {
+  margin: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+body main .workSpace .container .flexContainer .flexBox:hover {
+  opacity: 0.7;
+}
+
+body main .workSpace .container .properties {
+  margin: 0 10px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #b5e6a9;
+  -webkit-box-shadow: -1px -1px 10px 3px #156c00 inset;
+          box-shadow: -1px -1px 10px 3px #156c00 inset;
+}
+
+body main .workSpace .container .properties .sectionProperties .sectionOptions {
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  border-radius: 5px;
+}
+
+body main .workSpace .container .properties .fatherProperties {
+  height: 100%;
+  overflow-y: auto;
+  padding: 3px;
+}
+
+body main .workSpace .container .properties .fatherProperties > div > label {
+  color: #fffaf0;
+  margin: -2px 5px -2px 0;
+  display: inline-block;
+}
+
+body main .workSpace .container .properties .fatherProperties > div > label span {
+  font-size: 1rem;
+}
+
+body main .workSpace .container .properties .fatherProperties > div > label:hover {
+  opacity: 0.8;
+}
+
+body main .workSpace .container .properties .fatherProperties .children {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 0.5rem;
+}
+
+body main .workSpace .container .properties .fatherProperties .children > * {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+body main .workSpace .container .properties .fatherProperties .children *[data-tip]::before {
+  left: auto;
+  right: 25px;
+}
+
+body main .workSpace .container .properties .fatherProperties .children *[data-tip]::after {
+  left: auto;
+  right: 0;
+}
+
+body main .workSpace .container .properties .fatherProperties .children .childs label {
+  display: inline-block;
+  position: relative;
+  margin-left: 2px;
+}
+
+body main .workSpace .container .properties .fatherProperties .children .childs span {
+  font-size: 1rem;
+}
+
+body main .workSpace .container .properties .fatherProperties .children .childs .numChilds {
+  background-color: #f7941f;
+  border: none;
+  font-size: 1rem;
+  width: 30px;
+  padding: 0px 0 2px 0px;
+  margin: 0 0px 2px 2px;
+}
+
+body main .workSpace .container .properties .fatherProperties .children .childSize {
+  margin-left: 5px;
+}
+
+body main .workSpace .container .properties .fatherProperties .children .childSize > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 5px;
+}
+
+body main .workSpace .container .properties .fatherProperties .children .childSize > * > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .workSpace .container .properties .fatherProperties .children .childSize label {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 5px;
+}
+
+body main .workSpace .container .properties .fatherProperties .children .childSize input {
+  width: 2.5rem;
+  margin: 0 5px;
+}
+
+body main .workSpace .container .properties .fatherProperties .children .childsSize, body main .workSpace .container .properties .fatherProperties .children .numChilds {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d4b7da), to(transparent));
+  background: linear-gradient(#d4b7da, transparent);
+}
+
+body main .workSpace .container .properties .fatherProperties div.fatherOptions section.fatherOptions .inputs #flexFlowBoxS {
+  font-size: small;
+}
+
+body main .workSpace .container .properties .childrenProperties {
+  height: 100%;
+  overflow-y: auto;
+  padding: 3px;
+}
+
+body main .workSpace .container .properties .childrenProperties > div > label {
+  color: #fffaf0;
+  margin: -2px 5px -2px 0;
+  display: inline-block;
+}
+
+body main .workSpace .container .properties .childrenProperties > div > label span {
+  font-size: 1rem;
+}
+
+body main .workSpace .container .properties .childrenProperties > div > label.inlineStyle {
+  padding: 5px;
+}
+
+body main .workSpace .container .properties .childrenProperties label[class^='_item']:nth-child(1):hover {
+  opacity: 0.8;
+}
+
+body main .workSpace .container .properties .childrenProperties label[class^='_item']:nth-child(2) {
+  padding: 0;
+}
+
+body main .workSpace .container .properties .childrenProperties label[class^='_item']:nth-child(2) span {
+  width: 2rem;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+body main .workSpace .container .properties .childrenProperties > div[class^='_item'] {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .workSpace .container .properties .childrenProperties .childsOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: -webkit-gradient(linear, left top, left bottom, from(#feead0), to(transparent));
+  background: linear-gradient(#feead0, transparent);
+}
+
+body main .workSpace .container .properties .childrenProperties .childsOptions .childrenOptions .textInput label {
+  width: 7rem;
+}
+
+body main .workSpace .container .properties .propModelClear {
+  margin: 10px;
+  border: 1px solid black;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+body main .workSpace .container .properties .clearValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .workSpace .container .properties .propValueBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .workSpace .container .properties .toggleStyles {
+  float: right;
+  cursor: pointer;
+  padding: 8px !important;
+}
+
+body main .workSpace .container .properties .toggleStyles[tgglTxt^='CSS'] {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
+
+body main .workSpace .container .properties .toggleStyles:hover {
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+body main .workSpace .container .properties .styleBox {
+  max-height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+  background-color: #e4f2ff;
+  padding: 5px;
+  border-radius: 3px;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
+
+body main .workSpace .container .properties .styleBox [class^='styleBoxIn'] {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+  min-height: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body main .workSpace .container .properties .styleBox [class^='styleBoxIn']:hover {
+  white-space: unset;
+}
+
+body main .workSpace .container .properties .styleBox [class^='styleBoxEx'] {
+  overflow-y: auto;
+}
+
+body main .workSpace .container .properties .styleBox textarea {
+  background-color: red;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d3e3fc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .footer {
+  min-height: 2rem;
+}
+
+body footer .footer .footerContent {
+  margin: 10px;
+}
+
+body [class^='boxModelChild'] {
+  min-width: 6px;
+  min-height: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0.1px solid rgba(0, 0, 0, 0.473);
+  background-color: #f7941f;
+}
+
+body [data-tip] {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+body [data-tip] label {
+  white-space: nowrap;
+}
+
+body [data-tip]::before, body [data-tip]::after {
+  display: none;
+  position: absolute;
+}
+
+body [data-tip]::before {
+  content: '';
+  /* hides the tooltip when not hovered */
+  content: '';
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.473);
+  top: 30px;
+  left: 10px;
+  z-index: 8;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+body [data-tip]::after {
+  content: attr(data-tip);
+  top: 35px;
+  left: 0px;
+  padding: 5px 8px;
+  background: #1a1a1a;
+  color: #fff;
+  z-index: 9;
+  font-size: 0.75em;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 3px;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+body [data-tip]:hover::before, body [data-tip]:hover::after {
+  display: block;
+  left: 145px;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fade-in 1s forwards;
+          animation: fade-in 1s forwards;
+}
+
+.fadeInHalf {
+  opacity: 0;
+  -webkit-animation: fade-in 0.5s forwards;
+          animation: fade-in 0.5s forwards;
+}
+
+.toastr {
+  width: 20rem;
+  margin: 10px;
+  padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-radius: 5px;
+  background-color: #0009;
+  color: #fffaf0;
+  -webkit-box-shadow: 0px 0px 10px 5px #333;
+          box-shadow: 0px 0px 10px 5px #333;
+  line-height: 1.5rem;
+}
+
+.toastr::before {
+  content: '';
+  display: block;
+  width: 1rem;
+  height: 2rem;
+  margin: 0px 20px 0 15px;
+  position: relative;
+  float: left;
+  border-right: 4px solid #b5e6a9;
+  border-bottom: 4px solid #b5e6a9;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body main .workSpace .container .properties .propValueBox .propModel, .info .infoContent .valContent .propModel {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 10px 5px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #995db5;
+}
+
+body main .workSpace .container .properties .propValueBox .propModel ~ div, .info .infoContent .valContent .propModel ~ div {
+  padding: 1rem 0;
+}
+
+.info {
+  width: 100%;
+  position: absolute;
+  top: 30vh;
+  background-color: #e9e9e9e6;
+}
+
+.info .infoContent {
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(154, 38, 175, 0.2)), to(#fffaf0));
+  background: linear-gradient(rgba(154, 38, 175, 0.2), #fffaf0);
+}
+
+.info .infoContent .closeInfo {
+  width: 1.5rem;
+  height: 1.5rem;
+  float: right;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.info .infoContent .closeInfo::before, .info .infoContent .closeInfo::after {
+  content: '';
+  display: block;
+  border: 1px solid #333;
+  border-radius: 3px;
+  position: relative;
+}
+
+.info .infoContent .closeInfo::before {
+  top: 0.6rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.info .infoContent .closeInfo::after {
+  top: 0.5rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.info .infoContent .closeInfo:hover {
+  opacity: 1;
+}
+
+.info .infoContent .valContent .propModel {
+  width: 5rem;
+}
+
+.info .infoContent .valContent .propModel div {
+  min-width: 10px;
+  min-height: 10px;
+}
+
+.info .infoContent .valContent .titleValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info .infoContent p {
+  line-height: 1.5rem;
+}
+
+.infoTip {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  opacity: 0;
+  -webkit-animation: fadeIn 1s linear forwards,fadeOut 8s linear forwards;
+          animation: fadeIn 1s linear forwards,fadeOut 8s linear forwards;
+}
+
+.infoTip .tipMsg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0.7rem 8rem 0 0;
+  -webkit-animation: shake 3s ease-in-out;
+          animation: shake 3s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.infoTip .tipMsg div:first-child {
+  min-width: 14rem;
+  min-height: 2.2rem;
+  right: 15rem;
+  padding: 5px;
+  background-color: #ff0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  border: 3px solid red;
+  font-size: 17px;
+  -webkit-box-shadow: 0px 0px 17px 7px white;
+          box-shadow: 0px 0px 17px 7px white;
+  border-radius: 5px 5px 0px 5px;
+}
+
+.infoTip .tipMsg div:nth-child(2) {
+  height: 100%;
+}
+
+.infoTip .tipMsg div:nth-child(2)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-left: 17px solid #f00;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  top: 13px;
+  right: 127px;
+  -webkit-animation: shake2 3s ease-in-out;
+          animation: shake2 3s ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.infoTip .tipMsg div:nth-child(2)::after {
+  content: '';
+  display: block;
+  position: relative;
+  border-left: 15px solid #ff0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  top: 4px;
+  left: -3px;
+  z-index: 2;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes shake {
+  20% {
+    margin-right: 8rem;
+  }
+  30% {
+    margin-right: 9rem;
+  }
+  40% {
+    margin-right: 8rem;
+  }
+  50% {
+    margin-right: 8.5rem;
+  }
+  60% {
+    margin-right: 8rem;
+  }
+  100% {
+    margin-right: 8rem;
+  }
+}
+
+@keyframes shake {
+  20% {
+    margin-right: 8rem;
+  }
+  30% {
+    margin-right: 9rem;
+  }
+  40% {
+    margin-right: 8rem;
+  }
+  50% {
+    margin-right: 8.5rem;
+  }
+  60% {
+    margin-right: 8rem;
+  }
+  100% {
+    margin-right: 8rem;
+  }
+}
+
+@-webkit-keyframes shake2 {
+  20% {
+    right: 8rem;
+  }
+  30% {
+    right: 9rem;
+  }
+  40% {
+    right: 8rem;
+  }
+  50% {
+    right: 8.5rem;
+  }
+  60% {
+    right: 8rem;
+  }
+  100% {
+    right: 8rem;
+  }
+}
+
+@keyframes shake2 {
+  20% {
+    right: 8rem;
+  }
+  30% {
+    right: 9rem;
+  }
+  40% {
+    right: 8rem;
+  }
+  50% {
+    right: 8.5rem;
+  }
+  60% {
+    right: 8rem;
+  }
+  100% {
+    right: 8rem;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 480px) and (orientation: landscape) {
+  body main .workSpace .container .properties .sectionProperties .sectionOptions {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 480px) and (orientation: portrait) {
+  body main .workSpace .container .properties .sectionProperties .sectionOptions {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  html, body {
+    overflow: hidden;
+  }
+  body main .workSpace .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 90vh;
+  }
+  body main .workSpace .container .flexContainer {
+    width: 60%;
+  }
+  body main .workSpace .container .properties {
+    width: 40%;
+  }
+  body .info {
+    width: 60%;
+  }
+}
+
+footer .contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contactInfo > * {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contactInfo > * img {
+  height: 1.5rem;
+}
+
+footer .contactInfo > * a {
+  text-decoration: none;
+  color: #000;
+  font-style: normal;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.hidden {
+  display: none !important;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,27 @@
+@import "colors.scss";
+
+.toastr{
+    width: 20rem;
+    margin: 10px;
+    padding: 20px 10px;
+    position: fixed;
+    top: 0;
+    align-self: flex-end;
+    border-radius: 5px;
+    background-color: #0009;
+    color: $white;
+    box-shadow: 0px 0px 10px 5px #333;
+    line-height: 1.5rem;
+    &::before{
+        content: '';
+        display: block;
+        width: 1rem;
+        height: 2rem;
+        margin: 0px 20px 0 15px;
+        position: relative;
+        float: left;
+        border-right:4px solid $greenLight;
+        border-bottom:4px solid $greenLight;
+        transform: rotate(45deg);
+    }
+}

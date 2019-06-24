@@ -1,0 +1,502 @@
+@import "colors.scss";
+@import "myComponents.scss";
+@font-face{
+	font-family: Komika;
+  src: url(../fonts/komikax_-webfont.woff2);
+}
+@font-face{
+	font-family: Riffic;
+  src: url(../fonts/riffic-webfont.woff2);
+}
+@font-face{
+	font-family: Indigo-regular;
+  src: url(../fonts/indigo_regular-webfont.woff2);
+}
+@font-face{
+	font-family: Montserrat;
+  src: url(../fonts/montserrat-medium-webfont.woff2);
+}
+%textInput{
+        box-sizing: border-box;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        >*{flex-grow: 1;}
+        input{
+            outline: 0;
+            position: relative;
+            @extend %EditText;
+            max-width: 165px;
+            font-family: inherit;
+            font-size: 15px;
+        }
+}
+%inputs{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20rem;
+    .textInput{
+        @extend %textInput;
+    }
+    [data-tip]{
+        label{
+            min-width: 100%;
+        }
+    }
+}
+%flexContainer{
+    margin: 0 10px;
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: $containerBg;
+    box-shadow: -1px -1px 10px 3px $containerBgShadow inset;
+    @extend %flexSpan;
+}
+%flexBox{
+    background-color: $itemBg;
+    border-radius: 5px;
+    border-left: 5px solid $itemBgBorder;
+    border-top: 5px solid $itemBgBorder;
+    box-shadow: 0px 0px 0px 2px $black;
+    box-sizing: border-box;
+    vertical-align: middle;
+    @extend %flexSpan;
+}
+%flexSpan{
+    span{
+        position: relative;
+        display: block;
+        @extend %flexSpanInside;
+    }
+}
+%flexSpanInside{
+        text-align: center;
+        font: normal 2rem Komika;
+        color: $white;
+        text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
+}
+%flexOptions{    
+    flex-basis: 15em;
+    >div{
+    background-color: $white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+        >*{
+            padding: 5px;
+            margin: 0 5px 5px 5px;
+            &:first-child{
+                align-self: flex-end;
+            }
+        }
+    }
+}
+%CSSText{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px; 
+    background-color:$cssText;
+    cursor: pointer;
+}
+%EditText{
+    padding: 5px;
+    background-color: $white;
+    box-sizing: border-box;
+    font-family: inherit;
+    @extend %border;
+    &:focus{
+        background-color: #e6fee6 !important; 
+    }
+}
+%border{
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;    
+}
+html,body{height: 100%;margin: 0;padding: 0;min-width: 318px;}
+body{font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    .border{
+        @extend %border;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: Indigo-regular , sans-serif;
+        font-synthesis: style;
+        font-size: larger;
+        background-color: $Bg;
+        >*{
+            margin: 0;
+            margin: 0 10px;
+        }
+        h1{
+            color: $containerBg;
+            text-shadow: -2px 0 $white, 0 2px $white, 2px 0 $white, 0 -2px $white;
+            font-variant: small-caps;
+            cursor: default;
+            span{
+                color: $itemBg;
+            }
+            small{            
+                color: $greenLight;
+                text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
+            }
+        }
+    }
+    main{
+        flex-grow: 1;
+        background-color: $Bg;
+        .workSpace{
+            height: 100%;
+            width: 100%;
+            input{
+                &[type='number']{width: 2rem;}  
+                outline: 0;border: 0;position: relative;
+            }
+            .container{ 
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                >*{height: 100%;}
+                .flexContainer{
+                    min-height: 45vh;
+                    @extend %flexContainer;
+                    .flexBox{
+                        margin: 1px;
+                        @extend %flexBox;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                }
+                .properties{
+                    margin: 0 10px;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    background-color: $greenLight;
+                    box-shadow: -1px -1px 10px 3px $editorBgShadow inset;                   
+                    .sectionProperties{
+                        .sectionOptions{
+                            margin-top: 0.5rem;
+                            padding: 1rem 0;
+                            border-radius: 5px;
+                        }
+                    }
+                    .fatherProperties{
+                        height: 100%;
+                        overflow-y: auto; 
+                        padding: 3px;  
+                        >div>label{
+                                @extend %flexContainer;
+                                color: $white;
+                                margin: -2px 5px -2px 0;
+                                display: inline-block;
+                                span{
+                                    font-size: 1rem;                                    
+                                } 
+                                &:hover{
+                                    opacity: 0.8;
+                                }                                                  
+                                                            
+                        }
+                        .children {
+                                display: inline-flex;
+                                margin-top: 0.5rem;
+                                >*{display: inline-flex;}                    
+                                *[data-tip]{                   
+                                    &::before{left: auto;right: 25px;}                   
+                                    &::after{left: auto;right: 0;}                                  
+                                } 
+                                .childs {
+                                    label{
+                                        display: inline-block;
+                                        position: relative;
+                                        margin-left: 2px;
+                                    }                        
+                                    @extend %flexBox;
+                                    span{
+                                        font-size: 1rem;                                    
+                                    }  
+                                    .numChilds{
+                                        background-color: $itemBg;
+                                        border: none; 
+                                        @extend %flexSpanInside;
+                                        font-size: 1rem;
+                                        width: 30px;
+                                        padding: 0px 0 2px 0px;
+                                        margin: 0 0px 2px 2px;
+                                    }                        
+                                }
+                                .childSize{                                    
+                                    margin-left: 5px;
+                                    >*{
+                                        display: flex;
+                                        margin: 0 5px;
+                                        >*{
+                                            display: flex;
+                                        }
+                                    }
+                                    label{
+                                        align-items: center;
+                                        top: 5px;
+                                    }
+                                    input{            
+                                        @extend %EditText;
+                                        width: 2.5rem;
+                                        margin: 0 5px;
+                                    }
+                                }
+                                .childsSize,.numChilds {
+                                    display: inline-block;
+                                    user-select: none;                                    
+                                }
+                        }
+                        div.fatherOptions{
+                            section.fatherOptions{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-evenly;
+                                background: $infoBg;
+                                .inputs{
+                                    @extend %inputs;
+                                        #flexFlowBoxS{
+                                        font-size: small;                                    
+                                    }                                    
+                                }
+                                .flexOptions{
+                                    @extend %flexOptions;
+                                }
+                            }
+                        }
+                    }
+                    .childrenProperties{
+                        height: 100%;
+                        overflow-y: auto; 
+                        padding: 3px;  
+                        >div>label{
+                            @extend %flexContainer;
+                            color: $white;
+                            margin: -2px 5px -2px 0;
+                            display: inline-block;
+                            span{
+                                font-size: 1rem;                                    
+                            }
+                            &.inlineStyle{
+                                @extend %flexBox;
+                                padding: 5px;
+                            }                            
+                        }
+                        label[class^='_item']{
+                            &:nth-child(1){
+                                &:hover{
+                                    opacity: 0.8;
+                                }                                                  
+
+                            }
+                            &:nth-child(2){
+                                @extend %flexBox;
+                                padding: 0;
+                                span{
+                                    width: 2rem;
+                                    font-size: 1rem;
+                                    line-height: 2rem;
+                                } 
+                            }
+                        }
+                        >div[class^='_item']{
+                            cursor: pointer;
+                            display: flex;
+                        }
+                        .childsOptions{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            background: $infoChildBg;
+                            .childrenOptions{
+                                    .textInput{
+                                        label{
+                                            width: 7rem;
+                                        }
+                                    }
+                                .sizeContainer{
+                                    @extend %inputs;
+                                }
+                                .propertiesContainer{
+                                    @extend %inputs;
+                                }
+                            }
+                            .propertiesOptions{
+                                @extend %flexOptions;
+                            }
+                            .textInput{
+                                @extend %textInput;
+                            }            
+                        }
+                    }
+                    .propModelClear{
+                        margin: 10px;
+                        border: 1px solid black;
+                        width: 1.5rem;height: 1.5rem; 
+                    }
+                    .clearValue {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                    }
+                    .propValueBox{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        .propModel{
+                            @extend %propModel;
+                        }
+                    }
+                    .toggleStyles{
+                        float: right;
+                        cursor: pointer;
+                        padding: 8px !important;
+                        &[tgglTxt^='CSS']{
+                            font-family:  SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+                            //font-family:Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;;
+                            @extend %CSSText;
+                        }
+                        &[tgglTxt^='Edit']{
+                            @extend %EditText;
+                        }
+                        &:hover{
+                            opacity: 0.7;
+                            font-weight: bold; 
+                        }                                                  
+
+                    }
+                    .styleBox{
+                        max-height: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 10px 0;
+                        background-color: $cssBg;
+                        padding: 5px;
+                        border-radius: 3px;
+                        font-family:  SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+                        //font-family:Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;;
+                        >*{
+                            @extend %CSSText;
+                        }
+                        [class^='styleBoxIn']
+                        {
+                            max-width: 100%;
+                            overflow: hidden;                             
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            margin-bottom: 5px;
+                            min-height: 1rem;
+                            flex-shrink: 0;
+                            &:hover{
+                                white-space: unset;
+                            }
+                        }
+                        [class^='styleBoxEx']
+                        {overflow-y: auto;}
+                        textarea{
+                            background-color: red;
+                            height: 0;
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                        }                                        
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        display: flex;
+        background-color: $Bg;
+        justify-content: center;
+        .footer{
+            min-height: 2rem;
+            .footerContent{
+                margin: 10px;
+            }
+        }
+    }
+
+    [class^='boxModelChild']{
+        min-width: 6px;
+        min-height: 6px;
+        box-sizing: border-box;
+        border: 0.1px solid $blackBorderSoft;
+        background-color: $itemBg;
+    }
+    [data-tip] {
+        position:relative;
+        display: inline-flex;
+        label{
+            white-space: nowrap;
+        }
+        &::before,&::after {display:none;position:absolute;}
+        &::before {
+            content:'';
+            /* hides the tooltip when not hovered */            
+            content:'';
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid $blackBorderSoft;	            
+            top:30px;
+            left:10px;
+            z-index:8;
+            font-size:0;
+            line-height:0;
+            width:0;
+            height:0;
+        }
+        &::after {
+            content:attr(data-tip);
+            top:35px;
+            left:0px;
+            padding:5px 8px;
+            background:#1a1a1a;
+            color:#fff;
+            z-index:9;
+            font-size: 0.75em;
+            height:18px;
+            line-height:18px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            white-space:nowrap;
+            word-wrap:normal;
+        }
+        &:hover::before,
+        &:hover::after {
+            display:block;
+            left:145px;
+        }
+    }     
+}
+@import "animations.scss";
+@import "toastr.scss";
+@import "documentation.scss";
+@import "tips.scss";
+@import "responsive.scss";
+@import "footer.scss";
+.hidden{
+    display: none!important;
+}

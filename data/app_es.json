@@ -1,0 +1,20 @@
+[
+    {
+        "CSS":"Reglas CSS",
+        "Inputs":"Editores",
+        "infoTip":"click para desactivar info",
+        "Copy":{
+            "success":"éxito",
+            "unsuccess":"desastre",
+            "fallCopy":"La copia al portapapeles se ha producido con ",
+            "fallError":"Fallback: Oops, fallo al copiar ",
+            "asyncCopy":"La copia al portapapeles se produjo con éxito!",
+            "asyncError":"Async: Np se ha podido copiar el texto: "
+        },
+        "Mail":"Contacta conmigo",
+        "Linkedin":"Contacta conmigo en Linkedin",
+        "GitHub":"Contacta conmigo en GitHub",
+        "Codepen":"Contacta conmigo en Codepen",
+        "StackOverflow":"Contacta conmigo en Stack Overflow"
+    }
+]

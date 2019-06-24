@@ -1,0 +1,80 @@
+.infoTip{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    opacity: 0;      
+    animation: fadeIn 1s linear forwards,fadeOut 8s linear forwards; 
+    .tipMsg{  
+      display: flex;
+      justify-content: flex-end;
+      margin: 0.7rem 8rem 0 0;        
+      animation: shake 3s ease-in-out;animation-fill-mode: forwards;
+      div:first-child{   
+        min-width: 14rem;
+        min-height: 2.2rem;
+        right: 15rem;
+        //top: 0.8rem;
+        padding: 5px;
+        background-color: #ff0;
+        box-sizing: border-box;
+        text-align: center;
+        border: 3px solid red;
+        font-size: 17px;
+        box-shadow: 0px 0px 17px 7px white;
+        border-radius: 5px 5px 0px 5px;
+      }
+      div:nth-child(2){
+        height: 100%;
+        &::before{      
+          content: '';
+          display: block;
+          position: absolute;
+          border-left: 17px solid #f00;
+          border-top: 17px solid transparent;
+          border-bottom: 17px solid transparent;
+          top: 13px;
+          right: 127px;
+          animation: shake2 3s ease-in-out;animation-fill-mode: backwards;
+        }
+        &::after{      
+          content: '';
+          display: block;          
+          position: relative;          
+          border-left: 15px solid #ff0;          
+          border-top: 15px solid transparent;          
+          border-bottom: 15px solid transparent;          
+          top: 4px;          
+          left: -3px;          
+          z-index: 2;
+        }
+      }
+    }
+}
+@keyframes fadeIn { to { opacity: 1; } }
+@keyframes fadeOut { 80% { opacity: 1; }100% { opacity: 0; } }
+@keyframes shake { 
+  20%{margin-right: 8rem; } 
+  30%{margin-right: 9rem; } 
+  40%{margin-right: 8rem; } 
+  50%{margin-right: 8.5rem; } 
+  60%{margin-right: 8rem; } 
+  100%{margin-right: 8rem;  } 
+}
+@keyframes shake2 { 
+  20%{right: 8rem; } 
+  30%{right: 9rem; } 
+  40%{right: 8rem; } 
+  50%{right: 8.5rem; } 
+  60%{right: 8rem; } 
+  100%{right: 8rem;  } 
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

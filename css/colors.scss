@@ -1,0 +1,17 @@
+$black:#000;
+$white:#fffaf0;
+$greenLight:#b5e6a9;
+$Bg:#d3e3fc;
+$itemBg:#f7941f;
+$itemBgSoft:adjust-color($itemBg,$hue: +1,$saturation: +3%, $lightness: +36%);
+$itemBgBorder: adjust-color($itemBg, $red: +2, $green: +27,$blue: +56, $alpha: -0);
+$containerBg:#995db5;
+$containerBgShadow: adjust-color($containerBg, $red: -93, $green: -93,$blue: -93, $alpha: -0);
+$containerBgSoft:adjust-color($containerBg,$hue: +8,$saturation: -5%, $lightness: +25%);
+$containerBg_2: adjust-color($containerBg, $hue: +10,$saturation: +27%, $lightness: -12%, $alpha: -0.8);
+$editorBgShadow: adjust-color($greenLight, $saturation: +45%, $lightness: -57%);
+$infoBg:linear-gradient($containerBgSoft,transparent);
+$infoChildBg:linear-gradient($itemBgSoft,transparent);
+$cssText:#d0dbe5;
+$cssBg:adjust-color($cssText, $saturation: +71%, $lightness: +9%);
+$blackBorderSoft: adjust-color($black,$alpha: -0.527);

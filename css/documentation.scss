@@ -1,0 +1,70 @@
+@import "colors.scss";
+%propModel{
+    width: 2.5rem;height: 2.5rem;
+    margin: 0 10px 5px;
+    border-radius: 3px;
+    border: 1px solid $black;
+    color: transparent;
+    display: flex;
+    overflow: hidden;
+    background-color: $containerBg;
+    &~div{
+        padding: 1rem 0;
+    }
+    &.fatherBox{}
+    &.childBox{}
+}
+.info{
+    width: 100%;
+    position: absolute;
+    top: 30vh;
+    background-color: #e9e9e9e6;
+    .infoContent{
+        height: 100%;
+        margin: 10px;
+        padding: 10px;
+        background: linear-gradient($containerBg_2,$white);
+        .closeInfo{
+            width: 1.5rem;
+            height: 1.5rem;
+            float: right;
+            cursor: pointer;
+            &::before,&::after{
+                content: '';
+                display: block;
+                border: 1px solid #333;
+                border-radius: 3px;
+                position: relative;
+
+            }
+            &::before{
+                top: 0.6rem;
+                transform: rotate(45deg);
+            }
+            &::after{
+                top: 0.5rem;
+                transform: rotate(-45deg);
+            }
+            opacity: 0.5;
+            &:hover{opacity: 1;}
+        }
+        .valContent{
+            .propModel{ 
+                @extend %propModel;
+                width: 5rem;
+                div{
+                    min-width: 10px;
+                    min-height: 10px;
+                }
+            }
+            .titleValue{                
+                display: flex;
+                align-items: center;            
+            }
+            .docValue{}
+        }
+        p{
+            line-height: 1.5rem
+        }
+    }    
+}
