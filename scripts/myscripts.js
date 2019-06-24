@@ -41,7 +41,6 @@ function infoSwitcher(father) {
 function addInfoSwitcher() {
     infoSwitcher(document.querySelector('header'));
 }
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function containerEditor() {
     let container = document.querySelector('.properties');
@@ -52,8 +51,8 @@ function containerEditor() {
     let tgglBtn = createEle(fatherProperties, 'div', 'CSS Rules', 'toggleStyles');
     tgglBtn.addEventListener('click', () => { toggleStyleBoxes(fatherProperties, flexBox.id) });
     tgglBtn.setAttribute('tgglTxt', 'CSS Rules');
-    try{tgglBtn.innerText=appLngArr[0].CSS;}catch{}
-    
+    try { tgglBtn.innerText = appLngArr[0].CSS; } catch{ }
+
     let labelContainer = createEle(fatherProperties, 'div', ``, '');
     let label = createEle(labelContainer, 'label', `<span>container</span>`, '');
     label.addEventListener('click', containerEditor);
@@ -232,11 +231,11 @@ function showOptionsContainer(e) {
         let childs = 4;
         if ((el.value.includes('wrap')) || (classProp.includes('align-content'))) childs = 10;
         creaBoxModel(boxModel, childs);
-        createEle(optCont, 'div', el.value, '').addEventListener('click', (ev) => {        
+        createEle(optCont, 'div', el.value, '').addEventListener('click', (ev) => {
             applyProperty(ev.target.parentElement);
-            ev.stopPropagation();            
+            ev.stopPropagation();
         });
-    ;
+        ;
     });
 }
 function showOptionsChildrens(e) {
@@ -254,9 +253,9 @@ function showOptionsChildrens(e) {
         creaBoxModel(boxModel, 4, el.value);
         let opt = createEle(optCont, 'div', el.value, `${classProp} ${el.value}`);
         opt.setAttribute('id', classProp);
-        opt.addEventListener('click', (ev) => {        
+        opt.addEventListener('click', (ev) => {
             applyProperty(ev.target.parentElement);
-            ev.stopPropagation();            
+            ev.stopPropagation();
         });
     });
 }
@@ -376,11 +375,10 @@ function styleBoxes(styleSentence, i, id) {
     styleBoxExternal[i].innerHTML = `#${id}{<br>&emsp;${styleSentence.replace(/;/g, ';<br>&emsp;')}}`;
     styleBoxExternal[i].setAttribute('data-tip', 'click to copy to clipboard');
 }
-
 /**Alternador entre inputs y los estilos en formato CCS */
 function toggleStyleBoxes(father, id) {
     removeInfo();
-    if (document.getElementsByClassName('toggleStyles')[0].innerText.indexOf('CSS')>-1) {
+    if (document.getElementsByClassName('toggleStyles')[0].innerText.indexOf('CSS') > -1) {
         createCSSPropertiesBoxes(father, id);
     }
     else {
@@ -388,7 +386,7 @@ function toggleStyleBoxes(father, id) {
         if (id.length == 0) id = [''];
         if (id[0].startsWith('_item')) {
             boxEditor(document.getElementById(id));
-            translate();    
+            translate();
         } else { containerEditor(); }
     }
 }

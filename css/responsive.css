@@ -19,7 +19,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 90vh;
   }
   body main .workSpace .container .flexContainer {
     width: 60%;

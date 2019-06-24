@@ -2,15 +2,15 @@ let infoArr = [];
 let appLngArr = [];
 function listLanguage() {
     listInfoDoc(urlLng, 0).then(r => {
-        infoArr=r;    
-        })
+        infoArr = r;
+    })
         .catch(error => console.log(error.message));
     listInfoDoc(urlLng, 1).then(r => {
-        appLngArr=r;
-        addFooter();                
-        translate();    
-        })
-        .catch(error => console.log(error.message));    
+        appLngArr = r;
+        addFooter();
+        translate();
+    })
+        .catch(error => console.log(error.message));
 }
 function listInfoDoc(url, i) {
     return new Promise((resolve, reject) => {
