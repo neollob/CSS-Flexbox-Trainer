@@ -675,7 +675,6 @@ body main .workSpace .container .properties .styleBox label:hover {
 }
 
 body main .workSpace .container .properties .styleBox textarea {
-  background-color: red;
   height: 0;
   margin: 0;
   padding: 0;
@@ -907,6 +906,12 @@ body main .workSpace .container .properties .propValueBox .propModel ~ div, .inf
 
 .info .infoContent p {
   line-height: 1.5rem;
+}
+
+.info .infoContent p strong {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  background-color: #d0dbe5;
+  font-weight: normal;
 }
 
 .infoTip {

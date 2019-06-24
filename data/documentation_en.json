@@ -2,7 +2,7 @@
     {
         "title": "display",
         "image": "",
-        "doc": "This defines a flex container, inline or block depending on the given value. It enables a flex context for all its direct children.<br>Note that CSS columns have no effect on a flex container.",
+        "doc": "This defines a <strong>flex</strong> container, inline or block depending on the given value. It enables a <strong>flex</strong> context for all its direct children.<br>Note that <em>CSS</em> columns have no effect on a <strong>flex</strong> container.",
         "values": [
             {
                 "key": "flex",
@@ -10,56 +10,56 @@
             },
             {
                 "key": "inline-flex",
-                "text": "makes the flex container display inline. That is the only difference between display: inline-flex and display: flex. A similar comparison can be made between display: inline-block and display: block"
+                "text": "makes the <strong>flex</strong> container display inline. That is the only difference between <strong>display: inline-flex</strong> and <strong>display: flex</strong>. A similar comparison can be made between <strong>display: inline-block</strong> and <strong>display: block</strong>"
             }
         ]
     },
     {
         "title": "flex-direction",
         "image": "",
-        "doc": "This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.",
+        "doc": "This establishes the main-axis, thus defining the direction <strong>flex</strong> items are placed in the <strong>flex</strong> container. <em>Flexbox</em> is (aside from optional wrapping) a single-direction layout concept. Think of <strong>flex</strong> items as primarily laying out either in horizontal rows or vertical columns.",
         "values": [
             {
                 "key": "row",
-                "text": "(default) left to right in ltr; right to left in rtl"
+                "text": "(default) left to right in <strong>ltr</strong>; right to left in <strong>rtl</strong>"
             },
             {
                 "key": "row-reverse",
-                "text": "right to left in ltr; left to right in rtl"
+                "text": "right to left in <strong>ltr</strong>; left to right in <strong>rtl</strong>"
             },
             {
                 "key": "column",
-                "text": "same as row but top to bottom"
+                "text": "same as <strong>row</strong> but top to bottom"
             },
             {
                 "key": "column-reverse",
-                "text": "same as row-reverse but bottom to top"
+                "text": "same as <strong>row-reverse</strong> but bottom to top"
             }
         ]
     },
     {
         "title": "flex-wrap",
         "image": "",
-        "doc": "By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.",
+        "doc": "By default, <strong>flex</strong> items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.",
         "values": [
             {
                 "key": "nowrap",
-                "text": "(default) all flex items will be on one line."
+                "text": "(default) all <strong>flex</strong> items will be on one line."
             },
             {
                 "key": "wrap",
-                "text": "flex items will wrap onto multiple lines, from top to bottom."
+                "text": "<strong>flex</strong> items will wrap onto multiple lines, from top to bottom."
             },
             {
                 "key": "wrap-reverse",
-                "text": "flex items will wrap onto multiple lines from bottom to top."
+                "text": "<strong>flex</strong> items will wrap onto multiple lines from bottom to top."
             }
         ]
     },
     {
         "title": "justify-content",
         "image": "",
-        "doc": "This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.",
+        "doc": "This defines the alignment along the main axis. It helps distribute extra free space left over when either all the <strong>flex</strong> items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.",
         "values": [
             {
                 "key": "flex-start",
@@ -90,11 +90,11 @@
     {
         "title": "align-items",
         "image": "",
-        "doc": "This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).",
+        "doc": "This defines the default behavior for how <strong>flex</strong> items are laid out along the cross axis on the current line. Think of it as the <strong>justify-content</strong> version for the cross-axis (perpendicular to the main-axis).",
         "values": [
             {
                 "key": "stretch",
-                "text": "(default) stretch to fill the container (still respect min-width/max-width)."
+                "text": "(default) stretch to fill the container (still respect <strong>min-width</strong>/<strong>max-width</strong>)."
             },
             {
                 "key": "flex-start",
@@ -117,7 +117,7 @@
     {
         "title": "align-content",
         "image": "",
-        "doc": "This aligns a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.<br><b>Note:</b> this property has no effect when there is only one line of flex items.",
+        "doc": "This aligns a <strong>flex</strong> container's lines within when there is extra space in the cross-axis, similar to how <strong>justify-content</strong> aligns individual items within the main-axis.<br><b>Note:</b> this property has no effect when there is only one line of <strong>flex</strong> items.",
         "values": [
             {
                 "key": "flex-start",
@@ -133,7 +133,7 @@
             },
             {
                 "key": "space-between",
-                "text": "lines evenly distributed; the first line is at the start of the container while the last one is at the end."
+                "text": "lines evenly distributed, the first line is at the start of the container while the last one is at the end."
             },
             {
                 "key": "space-around",
@@ -148,43 +148,43 @@
     {
         "title": "flex-flow",
         "image": "",
-        "doc": "(Applies to: parent flex container element)<br>This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container's main and cross axes. The default value is row nowrap.",
+        "doc": "(Applies to: parent <strong>flex</strong> container element)<br>This is a shorthand for the <strong>flex-direction</strong> and <strong>flex-wrap</strong> properties, which together define the <strong>flex</strong> container's main and cross axes. The default value is <strong>row nowrap</strong>.",
         "values": ""
     },
     {
         "title": "order",
         "image": "",
-        "doc": "By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.",
+        "doc": "By default, <strong>flex</strong> items are laid out in the source order. However, the <strong>order</strong> property controls the order in which they appear in the <strong>flex</strong> container.",
         "values": ""
     },
     {
         "title": "flex-grow",
         "image": "",
-        "doc": "This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.<br>If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).<br>Negative numbers are invalid.",
+        "doc": "This defines the ability for a <strong>flex</strong> item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the <strong>flex</strong> container the item should take up.<br>If all items have <strong>flex-grow</strong> set to <strong>1</strong>, the remaining space in the container will be distributed equally to all children. If one of the children has a value of <strong>2</strong>, the remaining space would take up twice as much space as the others (or it will try to, at least).<br>Negative numbers are invalid.",
         "values": ""
     },
     {
         "title": "flex-shrink",
         "image": "",
-        "doc": "This defines the ability for a flex item to shrink if necessary.<br>Negative numbers are invalid.",
+        "doc": "This defines the ability for a <strong>flex</strong> item to shrink if necessary.<br>Negative numbers are invalid.",
         "values": ""
     },
     {
         "title": "flex-basis",
         "image": "",
-        "doc": "This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means \"look at my width or height property\" (which was temporarily done by the main-size keyword until deprecated). The content keyword means \"size it based on the item's content\" - this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren max-content, min-content, and fit-content do.<br>If set to 0, the extra space around content isn't factored in. If set to auto, the extra space is distributed based on its flex-grow value.",
+        "doc": "This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The <strong>auto</strong> keyword means \"look at my width or height property\" (which was temporarily done by the <strong>main-size</strong> keyword until deprecated). The <strong>content</strong> keyword means \"size it based on the item's content\" - this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren <strong>max-content</strong>, <strong>min-content</strong>, and <strong>fit-content</strong> do.<br>If set to <strong>0</strong>, the extra space around content isn't factored in. If set to <strong>auto</strong>, the extra space is distributed based on its <strong>flex-grow</strong> value.",
         "values": ""
     },
     {
         "title": "flex",
         "image": "",
-        "doc": "This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto..",
+        "doc": "This is the shorthand for <strong>flex-grow</strong>, <strong>flex-shrink</strong> and <strong>flex-basis</strong> combined. The second and third parameters (<strong>flex-shrink</strong> and <strong>flex-basis</strong>) are optional. Default is <strong>0 1 auto</strong>.",
         "values": ""
     },
     {
         "title": "align-self",
         "image": "",
-        "doc": "This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.<br>Note that float, clear and vertical-align have no effect on a flex item. ",
+        "doc": "This allows the default alignment (or the one specified by <strong>align-items</strong>) to be overridden for individual <strong>flex</strong> items.<br>Note that <strong>float</strong>, <strong>clear</strong> and <strong>vertical-align</strong> have no effect on a <strong>flex</strong> item. ",
         "values": [
             {
                 "key": "flex-start",

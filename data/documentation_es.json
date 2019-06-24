@@ -2,7 +2,7 @@
     {
         "title": "display",
         "image": "",
-        "doc": "Define como <em>flex</em> a un contenedor, en línea o bloque, dependiendo del valor dado. Permite dar un contexto <em>flex</em> a todos sus hijos directos. <br> Tenga en cuenta que las reglas <em>CSS</em> no tienen efecto en un contenedor <em>flex</em>.",
+        "doc": "Define como <strong>flex</strong> a un contenedor, en línea o bloque, dependiendo del valor dado. Permite dar un contexto <strong>flex</strong> a todos sus hijos directos. <br> Tenga en cuenta que las reglas <em>CSS</em> no tienen efecto en un contenedor <strong>flex</strong>.",
         "values": [
             {
                 "key": "flex",
@@ -10,14 +10,14 @@
             },
             {
                 "key": "inline-flex",
-                "text": "hace que el contenedor <em>flex</em> tenga un <em>display</em> en línea. Esa es la única diferencia entre <em>display: inline-flex</em> y <em>display: flex</em>. Una comparación similar se puede hacer entre <em>display: inline-block</em> y <em>display: block</em>."
+                "text": "hace que el contenedor <strong>flex</strong> tenga un <strong>display</strong> en línea. Esa es la única diferencia entre <strong>display: inline-flex</strong> y <strong>display: flex</strong>. Una comparación similar se puede hacer entre <strong>display: inline-block</strong> y <strong>display: block</strong>."
             }
         ]
     },
     {
         "title": "flex-direction",
         "image": "",
-        "doc": "Establece el eje principal, definiendo así la dirección el la que se colocan los elementos en el contenedor <em>flex</em>. <em>Flexbox</em> es (aparte del uso de la opción de ajuste <em>wrap</em>) un concepto de diseño de una sola dirección. Esta pensado principalmente para colocar los elementos <em>flex</em> en filas o columnas.",
+        "doc": "Establece el eje principal, definiendo así la dirección el la que se colocan los elementos en el contenedor <strong>flex</strong>. <em>Flexbox</em> es (aparte del uso de la opción de ajuste <strong>wrap</strong>) un concepto de diseño de una sola dirección. Esta pensado principalmente para colocar los elementos <strong>flex</strong> en filas o columnas.",
         "values": [
             {
                 "key": "row",
@@ -40,26 +40,26 @@
     {
         "title": "flex-wrap",
         "image": "",
-        "doc": "Por defecto, los elementos <em>flex</em> se tratarán de encajar todos en una sola línea. Con esta propiedad puede cambiar eso y que los elementos se coloquen en diversas filas o columnas según sea necesario.",
+        "doc": "Por defecto, los elementos <strong>flex</strong> se tratarán de encajar todos en una sola línea. Con esta propiedad puede cambiar eso y que los elementos se coloquen en diversas filas o columnas según sea necesario.",
         "values": [
             {
                 "key": "nowrap",
-                "text": "(default) todos los elementos <em>flex</em> están en una sola línea."
+                "text": "(default) todos los elementos <strong>flex</strong> están en una sola línea."
             },
             {
                 "key": "wrap",
-                "text": "los elementos <em>flex</em> se colocan en varias líneas, de arriba a abajo."
+                "text": "los elementos <strong>flex</strong> se colocan en varias líneas, de arriba a abajo."
             },
             {
                 "key": "wrap-reverse",
-                "text": "los elementos <em>flex</em> se colocan en varias líneas de abajo hacia arriba."
+                "text": "los elementos <strong>flex</strong> se colocan en varias líneas de abajo hacia arriba."
             }
         ]
     },
     {
         "title": "justify-content",
         "image": "",
-        "doc": "Define la alineación a lo largo del eje principal. Ayuda a distribuir el espacio libre sobrante cuando o bien todos los elementos <em>flex</em> en una línea son inflexibles, o son flexibles, pero han alcanzado su tamaño máximo. También ejerce un cierto control sobre la alineación de los elementos al desbordarse la línea.",
+        "doc": "Define la alineación a lo largo del eje principal. Ayuda a distribuir el espacio libre sobrante cuando o bien todos los elementos <strong>flex</strong> en una línea son inflexibles, o son flexibles, pero han alcanzado su tamaño máximo. También ejerce un cierto control sobre la alineación de los elementos al desbordarse la línea.",
         "values": [
             {
                 "key": "flex-start",
@@ -90,7 +90,7 @@
     {
         "title": "align-items",
         "image": "",
-        "doc": "Define como se establecen los elementos <em>flex</em> a lo largo del eje transversal en la línea actual. Piense en ello como la versión justify-content para el eje transversal (perpendicular al eje principal).",
+        "doc": "Define como se establecen los elementos <strong>flex</strong> a lo largo del eje transversal en la línea actual. Piense en ello como la versión justify-content para el eje transversal (perpendicular al eje principal).",
         "values": [
             {
                 "key": "stretch",
@@ -117,7 +117,7 @@
     {
         "title": "align-content",
         "image": "",
-        "doc": "Alinea las líneas dentro del contenedor <em>flex</em> cuando hay espacio extra en el eje transversal, similar a cómo <em>justify-content</em> alinea los elementos individuales dentro del eje principal <br> <b>Nota:</b> Esta propiedad no tiene efecto cuando sólo hay una línea de elemento <em>flex</em>.",
+        "doc": "Alinea las líneas dentro del contenedor <strong>flex</strong> cuando hay espacio extra en el eje transversal, similar a cómo <strong>justify-content</strong> alinea los elementos individuales dentro del eje principal <br> <b>Nota:</b> Esta propiedad no tiene efecto cuando sólo hay una línea de elemento <strong>flex</strong>.",
         "values": [
             {
                 "key": "flex-start",
@@ -148,43 +148,43 @@
     {
         "title": "flex-flow",
         "image": "",
-        "doc": "Es la abreviatura de las propiedades <em>flex-direction</em> y <em>flex-wrap</em>, que definen conjuntamente los ejes principales y transversales del recipiente <em>flex</em> El valor predeterminado es <em>row nowrap</em>.",
+        "doc": "Es la abreviatura de las propiedades <strong>flex-direction</strong> y <strong>flex-wrap</strong>, que definen conjuntamente los ejes principales y transversales del recipiente <strong>flex</strong> El valor predeterminado es <strong>row nowrap</strong>.",
         "values": ""
     },
     {
         "title": "order",
         "image": "",
-        "doc": "Por defecto, los elementos <em>flex</em> se disponen en el orden establecido por el contenedor. Sin embargo, la propiedad <em>order</em> controla el orden en el que aparecen en el contenedor <em>flex</em>.",
+        "doc": "Por defecto, los elementos <strong>flex</strong> se disponen en el orden establecido por el contenedor. Sin embargo, la propiedad <strong>order</strong> controla el orden en el que aparecen en el contenedor <strong>flex</strong>.",
         "values": ""
     },
     {
         "title": "flex-grow",
         "image": "",
-        "doc": "Define la capacidad de un elemento <em>flex</em> a crecer si es necesario. Se acepta un valor sin unidades que sirve como una proporción. Se dicta qué cantidad de espacio disponible en el interior del contenedor <em>flex</em> del elemento debe asumir. <br> Si todos los elementos tienen <em>flex-grow</em> establecido en 1, el espacio restante en el contenedor será distribuida por igual a todos los hijos. Si uno de los hijos tiene un valor de 2, tomaría el doble de espacio que los otros (o lo intentará, por lo menos). <br> Los números negativos no son válidos.",
+        "doc": "Define la capacidad de un elemento <strong>flex</strong> a crecer si es necesario. Se acepta un valor sin unidades que sirve como una proporción. Se dicta qué cantidad de espacio disponible en el interior del contenedor <strong>flex</strong> del elemento debe asumir. <br> Si todos los elementos tienen <strong>flex-grow</strong> establecido en <strong>1</strong>, el espacio restante en el contenedor será distribuida por igual a todos los hijos. Si uno de los hijos tiene un valor de <strong>2</strong>, tomaría el doble de espacio que los otros (o lo intentará, por lo menos). <br> Los números negativos no son válidos.",
         "values": ""
     },
     {
         "title": "flex-shrink",
         "image": "",
-        "doc": "Define la capacidad de un elemento <em>flex</em> para reducir el tamaño si es necesario. <br> Los números negativos no son válidos.",
+        "doc": "Define la capacidad de un elemento <strong>flex</strong> para reducir el tamaño si es necesario. <br> Los números negativos no son válidos.",
         "values": ""
     },
     {
         "title": "flex-basis",
         "image": "",
-        "doc": "Define el tamaño predeterminado de un elemento antes de que se distribuya el espacio restante. Puede ser una longitud (por ejemplo 20%, 5rem, etc.) o una palabra clave. La palabraa clave <em>auto</em> \"mira mi propiedad anchura o altura\" (se uso temporalmente la palabra clave <em>main-size</em> hasta que fue eliminada). La palabra clave <em>content</em> \"tamaño se basa en el contenido del elemento\" - Esta palabra clave no está bien soportada todavia, por lo que es difícil de probar y más difícil saber lo que sus hermanos <em>max-content</em>, <em>min-content</em>, y en <em>fit-content</em> hacen <br> Si se establece en <em>0</em>, el espacio extra alrededor no se tiene en cuenta. Si se pone en <em>auto</em>, el espacio adicional se distribuye en función de su valor <em>flex-grow</em>. Por defecto el valor es <em>auto</em>",
+        "doc": "Define el tamaño predeterminado de un elemento antes de que se distribuya el espacio restante. Puede ser una longitud (por ejemplo 20%, 5rem, etc.) o una palabra clave. La palabraa clave <strong>auto</strong> \"mira mi propiedad anchura o altura\" (se uso temporalmente la palabra clave <strong>main-size</strong> hasta que fue eliminada). La palabra clave <strong>content</strong> \"el tamaño se basa en el contenido del elemento\" - Esta palabra clave no está bien soportada todavia, por lo que es difícil de probar y más difícil saber lo que sus hermanos <strong>max-content</strong>, <strong>min-content</strong>, y <strong>fit-content</strong> hacen <br> Si se establece en <strong>0</strong>, el espacio extra alrededor no se tiene en cuenta. Si se pone en <strong>auto</strong>, el espacio adicional se distribuye en función de su valor <strong>flex-grow</strong>. Por defecto el valor es <strong>auto</strong>",
         "values": ""
     },
     {
         "title": "flex",
         "image": "",
-        "doc": "Es la forma abreviada de <em>flex-grow</em>, <em>flex-shrink</em> y <em>flex-basis</em> combinados. El segundo y tercer parámetros (<em>flex-shrink</em> y <em>flex-basis</em>) son opcionales. Por defecto es <em>0 1 auto</em>.",
+        "doc": "Es la forma abreviada de <strong>flex-grow</strong>, <strong>flex-shrink</strong> y <strong>flex-basis</strong> combinados. El segundo y tercer parámetros (<strong>flex-shrink</strong> y <strong>flex-basis</strong>) son opcionales. Por defecto es <strong>0 1 auto</strong>.",
         "values": ""
     },
     {
         "title": "align-self",
         "image": "",
-        "doc": "Permite que la alineación predeterminada (o la especificada por <em>align-items</em>) sea sobreescrita por los elementos <em>flex</em> individuales. <br> Tenga en cuenta que <em>float</em>, <em>clear</em> y <em>vertical-align</em> no tendrán ningún efecto sobre un elemento <em>flex</em>.",
+        "doc": "Permite que la alineación predeterminada (o la especificada por <strong>align-items</strong>) sea sobreescrita por los elementos <strong>flex</strong> individuales. <br> Tenga en cuenta que <strong>float</strong>, <strong>clear</strong> y <strong>vertical-align</strong> no tendrán ningún efecto sobre un elemento <strong>flex</strong>.",
         "values": [
             {
                 "key": "flex-start",

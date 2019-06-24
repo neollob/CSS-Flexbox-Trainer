@@ -61,10 +61,16 @@
                 display: flex;
                 align-items: center;            
             }
-            .docValue{}
+            .docValue{
+            }
         }
         p{
-            line-height: 1.5rem
+            line-height: 1.5rem;
+            strong{
+                font-family:  SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+                background-color: $cssText;
+                font-weight: normal;                        
+            }    
         }
     }    
 }
