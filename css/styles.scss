@@ -358,12 +358,14 @@ body{font-family: Montserrat;
                         display: flex;
                         flex-direction: row-reverse;
                         align-items: center;
+                        cursor: pointer;
                     }
                     .propValueBox{
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
                         align-items: center;
+                        cursor: pointer;
                         .propModel{
                             @extend %propModel;
                         }
@@ -414,6 +416,10 @@ body{font-family: Montserrat;
                         }
                         [class^='styleBoxEx']
                         {overflow-y: auto;}
+                        label{
+                            cursor: default;
+                            &:hover{opacity: 1 !important;}
+                        }
                         textarea{
                             background-color: red;
                             height: 0;

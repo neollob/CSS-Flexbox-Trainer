@@ -597,6 +597,7 @@ body main .workSpace .container .properties .clearValue {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 body main .workSpace .container .properties .propValueBox {
@@ -612,6 +613,7 @@ body main .workSpace .container .properties .propValueBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 body main .workSpace .container .properties .toggleStyles {
@@ -662,6 +664,14 @@ body main .workSpace .container .properties .styleBox [class^='styleBoxIn']:hove
 
 body main .workSpace .container .properties .styleBox [class^='styleBoxEx'] {
   overflow-y: auto;
+}
+
+body main .workSpace .container .properties .styleBox label {
+  cursor: default;
+}
+
+body main .workSpace .container .properties .styleBox label:hover {
+  opacity: 1 !important;
 }
 
 body main .workSpace .container .properties .styleBox textarea {
