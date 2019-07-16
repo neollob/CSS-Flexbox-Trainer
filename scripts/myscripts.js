@@ -51,7 +51,7 @@ function containerEditor() {
     let tgglBtn = createEle(fatherProperties, 'div', 'CSS Rules', 'toggleStyles');
     tgglBtn.addEventListener('click', () => { toggleStyleBoxes(fatherProperties, flexBox.id) });
     tgglBtn.setAttribute('tgglTxt', 'CSS Rules');
-    try { tgglBtn.innerText = appLngArr[0].CSS; } catch{ }
+    try { tgglBtn.innerText = appLngArr[0].CSS; } catch(err){ }
 
     let labelContainer = createEle(fatherProperties, 'div', ``, '');
     let label = createEle(labelContainer, 'label', `<span>container</span>`, '');
@@ -152,7 +152,7 @@ function fillBoxPropValues(box) {
             if ((box.style[i] == 'flex-basis') || (box.style[i] == 'flex-grow') || (box.style[i] == 'flex-shrink')) {
                 fillFlex();
             }
-        } catch{ }
+        } catch(err){ }
     }
 }
 function fillFlexFlow() {
@@ -288,7 +288,7 @@ function applyBoxStyle(e, un = '', r = '') {
             let value = father[i].children[index].children[1].value;
             {
                 let unit = '';
-                try { unit = father[i].children[index].children[1].attributes.units.value; } catch{ }
+                try { unit = father[i].children[index].children[1].attributes.units.value; } catch(err){ }
                 let prop = father[i].children[index].children[1];
                 let property = prop.id;
                 if (prop.type == 'text') property = prop.classList[0];

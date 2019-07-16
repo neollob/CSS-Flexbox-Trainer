@@ -28,7 +28,7 @@ function listInfoDoc(url, i) {
     })
 }
 function removeInfo() {
-    try { document.querySelector('.info').remove(); } catch{ }
+    try { document.querySelector('.info').remove(); } catch(err){ }
 }
 function docProperty(property) {
     if (infoSwitchValue) {
