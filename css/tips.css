@@ -2,6 +2,7 @@
   position: absolute;
   display: inline-block;
   width: 85%;
+  right: 115px;
   opacity: 0;
   -webkit-animation: fadeIn 1s linear forwards,fadeOut 8s linear forwards;
           animation: fadeIn 1s linear forwards,fadeOut 8s linear forwards;
@@ -11,6 +12,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -49,6 +52,7 @@
   border-left: 19px solid #f00;
   border-top: 17px solid transparent;
   border-bottom: 17px solid transparent;
+  border-radius: 5px 5px 5px 5px;
   top: 13px;
   right: 0;
   -webkit-animation: shake2 3s ease-in-out;
