@@ -9,7 +9,7 @@ function infoTip() {
         }, 2000);
         setTimeout(() => {
             infoTipWarning.remove();
-        }, 10000);
+        }, 100000);
         infoTipDone = true;
     }
 }
