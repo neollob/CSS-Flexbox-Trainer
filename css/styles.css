@@ -298,6 +298,7 @@ body header {
   font-synthesis: style;
   font-size: larger;
   background-color: #d3e3fc;
+  max-height: 59px;
 }
 
 body header > * {
