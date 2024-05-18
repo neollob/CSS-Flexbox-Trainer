@@ -327,6 +327,7 @@ body main {
       -ms-flex-positive: 1;
           flex-grow: 1;
   background-color: #d3e3fc;
+  height: calc(100vh - 60px);
 }
 
 body main .workSpace {
