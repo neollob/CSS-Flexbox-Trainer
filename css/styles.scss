@@ -156,6 +156,7 @@ body{font-family: Montserrat;
     main{
         flex-grow: 1;
         background-color: $Bg;
+	height: calc(100vh - 60px);
 	.workSpace{
             height: 100%;
             width: 100%;
