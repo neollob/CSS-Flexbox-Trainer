@@ -1,6 +1,6 @@
 let styleBoxesArr = [];
 let numChilds = 8;
-let infoSwitchValue = true;
+let infoSwitchValue = false;
 let valueCommonWidth = '100px';
 let valueCommonHeight = '100px';
 
