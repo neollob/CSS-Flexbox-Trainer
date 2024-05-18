@@ -155,8 +155,7 @@ body{font-family: Montserrat;
     main{
         flex-grow: 1;
         background-color: $Bg;
-	height: calc(100% - 100px);
-        .workSpace{
+	.workSpace{
             height: 100%;
             width: 100%;
             input{
